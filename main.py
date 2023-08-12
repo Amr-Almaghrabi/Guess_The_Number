@@ -8,7 +8,7 @@ import replit
 
 def guess_the_number():
   print(logo)
-  answer = random.randint(1,101)
+  answer = random.randint(1,100)
   
   print(f"\nWelcome to Guess The Number !")
   difficulty = input("Do you want an easy challenge or a hard challenge? (easy/hard) ")
@@ -22,7 +22,7 @@ def guess_the_number():
     counter = 5
   print(f"You are going to be guessing a number between 1 and 100, you have {counter} tries, good luck !")
   
-  while counter > -1:
+  while counter > 0:
     guess = int(input("Guess a number: "))
     if guess > 100 or guess <1:
       print("You guessed a number outside the range, try again between 1 and 100.")
